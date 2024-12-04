@@ -42,6 +42,6 @@ const styles = StyleSheet.create({
         borderRadius: 5
     },
     label: {
-        color: '#FFFFFF'
+        color: '#447D46'
     }
 })

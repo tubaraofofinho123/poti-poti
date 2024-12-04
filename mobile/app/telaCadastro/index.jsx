@@ -46,11 +46,11 @@ export default TelaCadastro = () => {
 
             <Text style={styles.title}>Crie sua conta</Text>
             <View style={styles.form}>
-                <InputPlace style={styles.inputs} value={name} onChangeTextHandler={setName} icon={"https://img.icons8.com/?size=100&id=ABBSjQJK83zf&format=png&color=d798ff"} label={"Nome"} />
-                <InputPlace style={styles.inputs} value={surname} onChangeTextHandler={setSurName} icon={"https://img.icons8.com/?size=100&id=ABBSjQJK83zf&format=png&color=d798ff"} label={"Sobrenome"} />
-                <InputPlace style={styles.inputs} value={email} onChangeTextHandler={setEmail} icon={"https://img.icons8.com/?size=100&id=85119&format=png&color=d798ff"} label={"Email"} />
-                <InputPlace style={styles.inputs} value={birthdate} onChangeTextHandler={setBirthdate} icon={"https://img.icons8.com/?size=100&id=tIy8o4gPXjoa&format=png&color=d798ff"} label={"Data de nascimento"} />
-                <InputPlace style={styles.inputs} value={password} onChangeTextHandler={setPassword} icon={"https://img.icons8.com/?size=100&id=3okL4g49Zmey&format=png&color=d798ff"} label={"Senha"} />
+                <InputPlace style={styles.inputs} value={name} onChangeTextHandler={setName} icon={"https://img.icons8.com/?size=100&id=ABBSjQJK83zf&format=png&color=447D46"} label={"Nome"} />
+                <InputPlace style={styles.inputs} value={surname} onChangeTextHandler={setSurName} icon={"https://img.icons8.com/?size=100&id=ABBSjQJK83zf&format=png&color=447D46"} label={"Sobrenome"} />
+                <InputPlace style={styles.inputs} value={email} onChangeTextHandler={setEmail} icon={"https://img.icons8.com/?size=100&id=85119&format=png&color=447D46"} label={"Email"} />
+                <InputPlace style={styles.inputs} value={birthdate} onChangeTextHandler={setBirthdate} icon={"https://img.icons8.com/?size=100&id=tIy8o4gPXjoa&format=png&color=447D46"} label={"Data de nascimento"} />
+                <InputPlace style={styles.inputs} value={password} onChangeTextHandler={setPassword} icon={"https://img.icons8.com/?size=100&id=3okL4g49Zmey&format=png&color=447D46"} label={"Senha"} />
             </View>
 
             <Pressable style={styles.button} onPress={fetchData}><Text style={{ color: '#ffffff' }}>Enviar</Text></Pressable>
@@ -60,7 +60,7 @@ export default TelaCadastro = () => {
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: "#e5bfff",
+        backgroundColor: "#D0FCC7",
         width: '100%',
         height: '100%',
         display: 'flex',
@@ -72,7 +72,7 @@ const styles = StyleSheet.create({
     title: {
         fontSize: 40,
         fontWeight: 'bold',
-        color: "#945fb6"
+        color: "#447D46"
     },
     botao_voltar: {
         position: "absolute",
@@ -83,7 +83,7 @@ const styles = StyleSheet.create({
         borderRadius: 5,
     },
     button: {
-        backgroundColor: '#945fb6',
+        backgroundColor: '#447D46',
         width: 250,
         height: 40,
         display: 'flex',

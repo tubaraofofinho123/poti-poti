@@ -32,7 +32,8 @@ const styles = StyleSheet.create({
     inputComponent: {
         width: '80%',
         borderWidth: 0,
-        outlineWidth: 0
+        outlineWidth: 0,
+        color: '#447D46',
     },
 
     input: {
@@ -49,7 +50,7 @@ const styles = StyleSheet.create({
         marginTop: 10
     },
     label: {
-        color: '#FFFFFF',
+        color: '#447D46',
         marginTop: 7
     }
 })

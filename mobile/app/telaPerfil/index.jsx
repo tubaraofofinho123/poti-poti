@@ -64,8 +64,8 @@ export default TelaPerfil = () => {
 
     return (
         <View style={styles.container}>
-            <Pressable onPress={() => router.replace("/telaHome")} style={styles.backButton}>
-                <Text style={styles.backText}>Voltar</Text>
+             <Pressable onPress={() => router.replace('/telaHome')} style={styles.botao_voltar}>
+                <Image source={require('../../assets/images/voltar.png')} style={styles.voltar} />
             </Pressable>
 
             <View style={styles.perfil}>
@@ -79,10 +79,10 @@ export default TelaPerfil = () => {
                     {user.bio && <Text style={styles.user_bio}>{user.bio}</Text>}
                 </View>
                 <Pressable style={styles.button} onPress={() => {router.replace("/telaAlterarSenha")}}>
-                    <Text style={{ color: '#ffffff' }}>Alterar Senha</Text>
+                    <Text style={{ color: '#ffffff' }}>𝗮𝗹𝘁𝗲𝗿𝗮𝗿 𝘀𝗲𝗻𝗵𝗮</Text>
                 </Pressable>  
                 <Pressable style={styles.button} onPress={() => {router.replace("/")}}>
-                    <Text style={{ color: '#ffffff' }}>Sair</Text>
+                    <Text style={{ color: '#ffffff' }}>𝘀𝗮𝗶𝗿</Text>
                 </Pressable>  
             </View>
         </View>
@@ -96,21 +96,21 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         height: '100%',
         justifyContent: 'space-around',
-        backgroundColor: '#05142E',
+        backgroundColor: '#90B582',
     },
     backButton: {
         position: "absolute",
         top: 20,
-        left: 10,
-        backgroundColor: "#4C648C",
+        left: 30,
+        backgroundColor: "#447D46",
         padding: 10,
-        borderRadius: 5,
+        borderRadius: 45,
     },
     backText: {
-        color: "#fff",
+        color: "#ffff",
     },
     button: {
-        backgroundColor: '#4C648C',
+        backgroundColor: '#447D46',
         width: 200,
         height: 40,
         display: 'flex',
@@ -121,19 +121,21 @@ const styles = StyleSheet.create({
         marginBottom: -10
     },
     perfil: {
-        backgroundColor: '#1B4184',
+        backgroundColor: '#D0FCC7',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        height: 360,
+        height: 350,
         width: 300,
-        borderRadius: 10,
+        borderRadius: 20,
         marginTop: 60,
+        border: '3px solid #447D46'
     },
     imagemBotao: {
         backgroundColor: '#ffffff',
         borderRadius: 50,
-        marginTop: 20
+        marginTop: 20,
+        border: '4px solid #90B582'
     },
     user_info: {
         display: 'flex',
@@ -144,25 +146,33 @@ const styles = StyleSheet.create({
     },
 
     user_nome: {
-        color: '#ffffff',
+        color: '#447D46',
         width: 300,
         textAlign: 'center',
     },
     user_email: {
-        color: '#ffffff',
+        color: '#447D46',
         width: 300,
         textAlign: 'center',
     },
     data_nasc: {
-        color: '#ffffff',
+        color: '#447D46',
         width: 300,
         textAlign: 'center',
     },
     user_bio: {
-        color: '#ffffff',
+        color: '#447D46',
         width: 300,
         textAlign: 'center',
         marginTop: 10,
         fontStyle: 'italic',
     },    
+    botao_voltar: {
+        position: "absolute",
+        top: 10,
+        left: 10,
+        backgroundColor: "none",
+        padding: 10,
+  
+    },
 });

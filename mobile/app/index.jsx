@@ -50,21 +50,21 @@ export default TelaLogin = () => {
         <View style={styles.container}>
             <Image source={require('../assets/images/logo.png')} style={styles.logo} />
 
-            <Text style={styles.title}>Bem-vindo! (˶˃ ᵕ ˂˶) .ᐟ.ᐟ</Text>
+            <Text style={styles.title}>𝗕𝗲𝗺-𝘃𝗶𝗻𝗱𝗼! (˶˃ ᵕ ˂˶) .ᐟ.ᐟ</Text>
             <View style={styles.form}>
-            <Text style={styles.subtitle}>Login</Text>
-                <InputPlace value={email} onChangeTextHandler={setEmail} icon={"https://img.icons8.com/?size=100&id=85119&format=png&color=d798ff"} label={"Email"} />
-                <InputPlace value={password} onChangeTextHandler={setPassword} icon={"https://img.icons8.com/?size=100&id=3okL4g49Zmey&format=png&color=d798ff"} label={"Senha"} />
-                <Link href={"/telaCadastro"} style={styles.link}><Text style={styles.link_text}>Não possui uma conta? Cadastre-se</Text></Link>
+                <Text style={styles.subtitle}>𝗟𝗼𝗴𝗶𝗻</Text>
+                <InputPlace value={email} onChangeTextHandler={setEmail} icon={"https://img.icons8.com/?size=100&id=85119&format=png&color=447D46"} label={"𝖤𝗆𝖺𝗂𝗅"} />
+                <InputPlace value={password} onChangeTextHandler={setPassword} icon={"https://img.icons8.com/?size=100&id=3okL4g49Zmey&format=png&color=447D46"} label={"𝖲𝖾𝗇𝗁𝖺"} />
+                <Link href={"/telaCadastro"} style={styles.link}><Text style={styles.link_text}>𝖭𝖺̃𝗈 𝗉𝗈𝗌𝗌𝗎𝗂 𝗎𝗆𝖺 𝖼𝗈𝗇𝗍𝖺? 𝖢𝖺𝖽𝖺𝗌𝗍𝗋𝖾-𝗌𝖾</Text></Link>
             </View>
-            <Pressable style={styles.button} onPress={fetchData}><Text style={{ color: '#ffffff' }}>Login</Text></Pressable>
+            <Pressable style={styles.button} onPress={fetchData}><Text style={{ color: '#ffffff' }}>𝖫𝗈𝗀𝗂𝗇</Text></Pressable>
         </View>
     );
 };
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: "#e5bfff",
+        backgroundColor: "#D0FCC7", 
         width: '100%',
         height: '100%',
         display: 'flex',
@@ -75,12 +75,12 @@ const styles = StyleSheet.create({
     logo: {
         width: 90,
         height: 90,
-        marginBottom: -30,
+        marginBottom: 10,
     },
     title: {
         fontSize: 40,
         fontWeight: 'bold',
-        color: "#d798ff",
+        color: "#447D46", 
         marginBottom: -20,
         width: 450,
         textAlign: 'center'
@@ -88,12 +88,12 @@ const styles = StyleSheet.create({
     subtitle: {
         fontSize: 30,
         fontWeight: 'bold',
-        color: "#ffffff",
+        color: "#FFFFFF",
         width: 400,
         textAlign: 'center'
     },
     button: {
-        backgroundColor: '#945FB6',
+        backgroundColor: '#447D46', 
         width: 250,
         height: 40,
         display: 'flex',
@@ -105,13 +105,13 @@ const styles = StyleSheet.create({
     link_text: {
         fontSize: 15,
         marginTop: 100,
-        color: '#FFFFFF'
+        color: '#fff' 
     },
     link: {
         marginTop: 15
     },
     form: {
-        backgroundColor: '#945FB6',
+        backgroundColor: '#90B582', 
         borderRadius: 7,
         width: 350,
         height: 300,
