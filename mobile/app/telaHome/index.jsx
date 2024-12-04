@@ -3,8 +3,8 @@ import { Text, View, StyleSheet, Image, FlatList, Pressable, ScrollView } from "
 import { Link } from "@react-navigation/native"; // Certifique-se de usar react-navigation
 
 const playlists = [
-  { id: 0.1, title: "1990", imageUrl: "https://i.pinimg.com/736x/d7/4b/5b/d74b5be6457c9ccd01eaf616d5a3e4ed.jpg" },
-  { id: 0.2, title: "00s", imageUrl: "https://i.pinimg.com/236x/5e/5d/3d/5e5d3d29bcdf98d8fe858b744e4c1a4e.jpg" },
+  { id: 0.1, title: "1990", imageUrl: "https://i.pinimg.com/736x/0f/2b/40/0f2b409f45a34045b155fc28c2f5f7fb.jpg" },
+  { id: 0.2, title: "أندروميدا", imageUrl: "https://i.pinimg.com/736x/ef/b4/57/efb457102a134c10760a6c5077eeb6d5.jpg" },
   { id: 0.3, title: "(๑°o°๑) 🍏", imageUrl: "https://i.pinimg.com/736x/fa/0e/c4/fa0ec4b451f228118016c641985cb7af.jpg" },
   { id: 0.4, title: "raspberry", imageUrl: "https://i.pinimg.com/736x/ff/a5/29/ffa529895226d4ea5838e762f048a605.jpg" },
   { id: 0.5, title: "petals'", imageUrl: "https://i.pinimg.com/736x/eb/6b/d1/eb6bd18b9c9d24ae6102e15b70173175.jpg" },
@@ -17,8 +17,8 @@ const Artistas = [
   { id: 1.4, title: "LOOΠΔ", imageUrl: "https://i.scdn.co/image/ab6761610000e5eb80584436e5726afb70cee7f8" },
   { id: 1.5, title: "Jaehyun", imageUrl: "https://pbs.twimg.com/media/GcYvWBJaQAAD-B2.jpg" },
   { id: 1.6, title: "Chuu", imageUrl: "https://i.scdn.co/image/ab67616d00001e02cc681b43015ca45cd52e4625" },
-  { id: 1.7, title: "Nayeon", imageUrl: "https://i.scdn.co/image/ab6761610000e5ebfbdd3f060e1cbe9e8eeaecac" },
-  { id: 1.8, title: "KISS OF LIFE", imageUrl: "https://i.scdn.co/image/ab6761610000e5eb33a8ccf7ddd38cea1a0eac0d" },
+  { id: 1.7, title: "Björk", imageUrl: "https://i.scdn.co/image/ab67616d0000b2730bd598408bc507d070b7ba4c" },
+  { id: 1.8, title: "NCT 127", imageUrl: "https://i.scdn.co/image/ab6761610000e5ebdc904dcc7399f1fd90107392" },
   { id: 1.9, title: "ARTMS", imageUrl: "https://i.scdn.co/image/ab6761610000e5eb0576f9b8cd1e8c68afe0e3e6" },
   { id: 1.11, title: "ILLIT", imageUrl: "https://i.scdn.co/image/ab6761610000e5eb5884b5e3bdc71d42b62bfcfd" },
 ];
@@ -74,7 +74,7 @@ const TelaHome = () => {
     <ScrollView style={styles.container}>
       <View style={styles.header}>
         <Image source={require('../../assets/images/logo.png')} style={styles.logo} />
-        <Text style={styles.title}>Bem-vindo ao Spotfake</Text>
+        <Text style={styles.title}>𝖘𝖕𝖔𝖙𝖋𝖆𝖐𝖊</Text>
         <Link to="/telaPerfil" style={styles.profileLink}>
           <Text style={styles.profileText}>Meu Perfil</Text>
           {/*<Image source={require('../../assets/images/userIcon.png')} style={styles.profileImage} />*/}
