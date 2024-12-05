@@ -53,8 +53,8 @@ export default TelaLogin = () => {
             <Text style={styles.title}>𝗕𝗲𝗺-𝘃𝗶𝗻𝗱𝗼! (˶˃ ᵕ ˂˶) .ᐟ.ᐟ</Text>
             <View style={styles.form}>
                 <Text style={styles.subtitle}>𝗟𝗼𝗴𝗶𝗻</Text>
-                <InputPlace value={email} onChangeTextHandler={setEmail} icon={"https://img.icons8.com/?size=100&id=85119&format=png&color=447D46"} label={"𝖤𝗆𝖺𝗂𝗅"} />
-                <InputPlace value={password} onChangeTextHandler={setPassword} icon={"https://img.icons8.com/?size=100&id=3okL4g49Zmey&format=png&color=447D46"} label={"𝖲𝖾𝗇𝗁𝖺"} />
+                <InputPlace value={email} onChangeTextHandler={setEmail} icon={"https://img.icons8.com/?size=100&id=85119&format=png&color=447D46"} label={"𝗘𝗺𝗮𝗶𝗹"} />
+                <InputPlace value={password} onChangeTextHandler={setPassword} icon={"https://img.icons8.com/?size=100&id=3okL4g49Zmey&format=png&color=447D46"} label={"𝗦𝗲𝗻𝗵𝗮"} />
                 <Link href={"/telaCadastro"} style={styles.link}><Text style={styles.link_text}>𝖭𝖺̃𝗈 𝗉𝗈𝗌𝗌𝗎𝗂 𝗎𝗆𝖺 𝖼𝗈𝗇𝗍𝖺? 𝖢𝖺𝖽𝖺𝗌𝗍𝗋𝖾-𝗌𝖾</Text></Link>
             </View>
             <Pressable style={styles.button} onPress={fetchData}><Text style={{ color: '#ffffff' }}>𝖫𝗈𝗀𝗂𝗇</Text></Pressable>
@@ -71,26 +71,28 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         gap: 40,
+        
     },
     logo: {
-        width: 90,
-        height: 90,
-        marginBottom: 10,
+        width: 80,
+        height: 80,
+        marginBottom: 8,
     },
     title: {
-        fontSize: 40,
+        fontSize: 35,
         fontWeight: 'bold',
         color: "#447D46", 
-        marginBottom: -20,
-        width: 450,
-        textAlign: 'center'
+        marginBottom: 12,
+        width: 500,
+        textAlign: 'center',
+        height: 60,
     },
     subtitle: {
         fontSize: 30,
         fontWeight: 'bold',
-        color: "#FFFFFF",
+        color: "#FFF     faFFF",
         width: 400,
-        textAlign: 'center'
+        textAlign: 'center',
     },
     button: {
         backgroundColor: '#447D46', 
@@ -100,7 +102,8 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         borderRadius: 5,
-        marginTop: -10
+        marginTop: -10,
+        border: '4px solid #90B582',
     },
     link_text: {
         fontSize: 15,
@@ -118,5 +121,6 @@ const styles = StyleSheet.create({
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
+        border: '4px solid #447D46',
     }
 });

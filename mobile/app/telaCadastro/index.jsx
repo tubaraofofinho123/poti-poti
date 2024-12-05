@@ -44,7 +44,7 @@ export default TelaCadastro = () => {
                 <Image source={require('../../assets/images/voltar.png')} style={styles.profileImage} />
             </Pressable>
 
-            <Text style={styles.title}>Crie sua conta</Text>
+            <Text style={styles.title}>𝗖𝗿𝗶𝗲 𝘀𝘂𝗮 𝗰𝗼𝗻𝘁𝗮</Text>
             <View style={styles.form}>
                 <InputPlace style={styles.inputs} value={name} onChangeTextHandler={setName} icon={"https://img.icons8.com/?size=100&id=ABBSjQJK83zf&format=png&color=447D46"} label={"Nome"} />
                 <InputPlace style={styles.inputs} value={surname} onChangeTextHandler={setSurName} icon={"https://img.icons8.com/?size=100&id=ABBSjQJK83zf&format=png&color=447D46"} label={"Sobrenome"} />
